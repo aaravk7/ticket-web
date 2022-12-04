@@ -50,7 +50,12 @@ const Header: FC = () => {
               </Nav.Link>
             </>
           ) : (
-            <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
+            <>
+              <Nav.Link as={Link} to="/orders">
+                Orders
+              </Nav.Link>
+              <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
+            </>
           )}
         </Nav>
       </Container>
